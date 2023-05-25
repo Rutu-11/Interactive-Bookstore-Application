@@ -36,14 +36,14 @@ function Navbar({handleSidebar}) {
       <span className='header__youTube'>B<span className='header__O'>OO</span >KS ST<span className='header__O'>O</span>RE</span>
       </div>
       <form action="" onSubmit={handleSubmit} >
-        <input type="text" placeholder='Search Books Here' value={input} onChange={(e)=>setInput(e.target.value)} />
+        <input type="text" placeholder='Search Your Books Here' value={input} onChange={(e)=>setInput(e.target.value)} />
         {/* <button type='submit'>
           <AiOutlineSearch size={22}/>
         </button> */}
       </form>
 
       <div className='header__icons'>
-        <BsCartFill  size={28} />
+        <BsCartFill  size={28} onClick={()=> navigate('/cart')} />
 
         
         <MdApps  size={28}/>

@@ -35,12 +35,12 @@ const Sidebar = ({ sidebar, handleSidebar }) => {
         <span>Home</span>
       </li>
 
-      <li>
+      <li onClick={()=>{navigate('/books-list') }}>
         <GiBookshelf size={23} />
         <span>Books List</span>
       </li>
 
-      <li>
+      <li onClick={()=>{navigate('/favourites') }}>
         <BsFillBookmarkHeartFill size={23} />
         <span>Favourite</span>
       </li>
@@ -61,7 +61,7 @@ const Sidebar = ({ sidebar, handleSidebar }) => {
      
 
       <hr />
-      <li onClick={()=>{navigate('/auth') }} >
+      <li onClick={()=>{navigate('/login') }} >
         <MdLogin size={23} />
         <span>Login</span>
       </li>
